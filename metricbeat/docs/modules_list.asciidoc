@@ -130,6 +130,8 @@ This file is generated! See scripts/mage/docs_collector.go
 .3+| .3+|  |<<metricbeat-metricset-iis-application_pool,application_pool>> beta[]  
 |<<metricbeat-metricset-iis-webserver,webserver>> beta[]  
 |<<metricbeat-metricset-iis-website,website>> beta[]  
+|<<metricbeat-module-intel_power_gadget,intel_power_gadget>>  beta[]   |image:./images/icon-no.png[No prebuilt dashboards]    |  
+.1+| .1+|  |<<metricbeat-metricset-intel_power_gadget-cpu,cpu>> beta[]  
 |<<metricbeat-module-istio,Istio>>  beta[]   |image:./images/icon-no.png[No prebuilt dashboards]    |  
 .5+| .5+|  |<<metricbeat-metricset-istio-citadel,citadel>> beta[]  
 |<<metricbeat-metricset-istio-galley,galley>> beta[]  
@@ -310,6 +312,7 @@ include::modules/haproxy.asciidoc[]
 include::modules/http.asciidoc[]
 include::modules/ibmmq.asciidoc[]
 include::modules/iis.asciidoc[]
+include::modules/intel_power_gadget.asciidoc[]
 include::modules/istio.asciidoc[]
 include::modules/jolokia.asciidoc[]
 include::modules/kafka.asciidoc[]

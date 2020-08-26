@@ -1,0 +1,2 @@
+This is the intel_power_gadget module.
+

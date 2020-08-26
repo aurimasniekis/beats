@@ -1,0 +1,19 @@
+{
+    "@timestamp":"2016-05-23T08:05:34.853Z",
+    "beat":{
+        "hostname":"beathost",
+        "name":"beathost"
+    },
+    "metricset":{
+        "host":"localhost",
+        "module":"intel_power_gadget",
+        "name":"cpu",
+        "rtt":44269
+    },
+    "intel_power_gadget":{
+        "cpu":{
+            "example": "intel_power_gadget"
+        }
+    },
+    "type":"metricsets"
+}

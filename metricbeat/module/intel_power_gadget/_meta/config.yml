@@ -1,0 +1,5 @@
+- module: intel_power_gadget
+  metricsets: ["cpu"]
+  enabled: true
+  period: 1s
+

@@ -82,6 +82,8 @@ import (
 	_ "github.com/elastic/beats/v7/metricbeat/module/http"
 	_ "github.com/elastic/beats/v7/metricbeat/module/http/json"
 	_ "github.com/elastic/beats/v7/metricbeat/module/http/server"
+	_ "github.com/elastic/beats/v7/metricbeat/module/intel_power_gadget"
+	_ "github.com/elastic/beats/v7/metricbeat/module/intel_power_gadget/cpu"
 	_ "github.com/elastic/beats/v7/metricbeat/module/jolokia"
 	_ "github.com/elastic/beats/v7/metricbeat/module/jolokia/jmx"
 	_ "github.com/elastic/beats/v7/metricbeat/module/kafka"

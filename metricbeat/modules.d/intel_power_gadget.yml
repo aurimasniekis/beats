@@ -1,0 +1,7 @@
+# Module: intel_power_gadget
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-intel_power_gadget.html
+
+- module: intel_power_gadget
+  metricsets: ["cpu"]
+  enabled: true
+  period: 1s

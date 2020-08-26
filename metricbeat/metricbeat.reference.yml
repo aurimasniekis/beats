@@ -363,6 +363,13 @@ metricbeat.modules:
   #    fields: # added to the the response in root. overwrites existing fields
   #      key: "value"
 
+#-------------------------- Intel_power_gadget Module --------------------------
+- module: intel_power_gadget
+  metricsets: ["cpu"]
+  enabled: true
+  period: 1s
+
+
 #------------------------------- Jolokia Module -------------------------------
 - module: jolokia
   #metricsets: ["jmx"]

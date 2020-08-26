@@ -1,0 +1,222 @@
+- key: intel_power_gadget
+  title: "intel_power_gadget"
+  release: beta
+  description: >
+    intel_power_gadget module
+  fields:
+    - name: cpu
+      type: group
+      description: >
+      fields:
+        - name: package
+          type: integer
+          description: >
+            Number of Intel processor package on this system
+        - name: sample
+          type: object
+          description: >
+            Intel processor packages on this system
+          fields:
+            - name: pkg.package_no
+              type: integer
+              description: >
+                Number of Intel processor package on this system
+            - name: pkg.package_cores
+              type: integer
+              description: >
+                Number of CPU cores on the specified package
+            - name: pkg.ia_base_frequency
+              type: double
+              description: >
+                CPU base frequency on the specific package. CPU base frequency, also referred to as the advertised frequency, is the maximum non-turbo CPU frequency.
+            - name: pkg.ia_max_frequency
+              type: double
+              description: >
+                CPU maximum frequency on the specific package. CPU maximum frequency is the maximum 1 core turbo frequency.
+            - name: pkg.gt_max_frequency
+              type: double
+              description: >
+                Intel integrated GPU maximum frequency on the specific package.
+            - name: pkg.package_tdp
+              type: double
+              description: >
+                Package Thermal Design Point (TDP) on the specific package
+            - name: pkg.max_temperature
+              type: double
+              description: >
+                Maximum junction temperature on the specific package.
+            - name: pkg.gt_availabe
+              type: boolean
+              description: >
+                Intel integrated graphics (GT) is available on the specified package
+            - name: pkg.ia_energy_availabe
+              type: boolean
+              description: >
+                CPU core energy plane is available on the specified package
+            - name: pkg.dram_energy_availabe
+              type: boolean
+              description: >
+                DRAM energy plane is available on the specified package
+            - name: pkg.platform_energy_availabe
+              type: boolean
+              description: >
+                Platform energy plane is available on the specified package
+            - name: timestamp_start
+              type: date
+              description: >
+                A sample start timestamp
+            - name: timestamp_end
+              type: date
+              description: >
+                A sample end timestamp
+            - name: interval
+              type: long
+              description: >
+                A sample duration
+            - name: ia_frequency.mean
+              type: double
+              description: >
+                A mean CPU core frequency across all cores for the specified sample
+            - name: ia_frequency.min
+              type: double
+              description: >
+                A minimum CPU core frequency across all cores for the specified sample
+            - name: ia_frequency.max
+              type: double
+              description: >
+                A maximum CPU core frequency across all cores for the specified sample
+            - name: ia_frequency_request.mean
+              type: double
+              description: >
+                A mean CPU core frequency requested by the Operating System (OS) across all cores for the specified sample
+            - name: ia_frequency_request.min
+              type: double
+              description: >
+                A minimum CPU core frequency requested by the Operating System (OS) across all cores for the specified sample
+            - name: ia_frequency_request.max
+              type: double
+              description: >
+                A maximum CPU core frequency requested by the Operating System (OS) across all cores for the specified sample
+            - name: ia_power.watts
+              type: double
+              description: >
+                CPU power between the 2 specified samples
+            - name: ia_power.joules
+              type: double
+              description: >
+                CPU energy between the 2 specified samples
+            - name: ia_temperature.mean
+              type: double
+              description: >
+                A mean CPU core temperature across all cores for the specified sample
+            - name: ia_temperature.min
+              type: double
+              description: >
+                A minimum CPU core temperature across all cores for the specified sample
+            - name: ia_temperature.max
+              type: double
+              description: >
+                A maximum CPU core temperature across all cores for the specified sample
+            - name: ia_utilization
+              type: double
+              description: >
+                CPU utilization across all cores between the 2 specified samples.
+            - name: gt_frequency
+              type: double
+              description: >
+                Intel integrated GPU frequency for the specified sample
+            - name: gt_frequency_request
+              type: double
+              description: >
+                Intel integrated GPU frequency requested by the Operating System (OS) for the specified sample
+            - name: gt_utilization
+              type: double
+              description: >
+                Intel integrated GPU utilization for the specified sample
+            - name: package_power.watts
+              type: double
+              description: >
+                Package power between the 2 specified samples
+            - name: package_power.joules
+              type: double
+              description: >
+                Package energy between the 2 specified samples
+            - name: platform_power.watts
+              type: double
+              description: >
+                Platform power between the 2 specified samples
+            - name: platform_power.joules
+              type: double
+              description: >
+                Platform energy between the 2 specified samples
+            - name: dram_power.watts
+              type: double
+              description: >
+                DRAM power between the 2 specified samples
+            - name: dram_power.joules
+              type: double
+              description: >
+                DRAM energy between the 2 specified samples
+            - name: package_temperature
+              type: double
+              description: >
+                Package temperature for the specified sample
+            - name: tdp
+              type: double
+              description: >
+                Thermal Design Point (TDP) for the specified sample
+            - name: ia_core_frequency
+              type: nested
+              description: >
+                CPU core frequency on the specified core for the specified sample
+              fields:
+                - name: mean
+                  type: double
+                  description: >
+                    A mean value
+                - name: min
+                  type: double
+                  description: >
+                    A minimum value
+                - name: max
+                  type: double
+                  description: >
+                    A maximum value
+            - name: ia_core_frequency_request
+              type: nested
+              description: >
+                CPU core frequency requested by the Operating System (OS) on the specified core for the specified sample
+              fields:
+                - name: mean
+                  type: double
+                  description: >
+                    A mean value
+                - name: min
+                  type: double
+                  description: >
+                    A minimum value
+                - name: max
+                  type: double
+                  description: >
+                    A maximum value
+            - name: ia_core_temperature
+              type: nested
+              description: >
+                CPU core temperature on the specified core for the specified sample
+              fields:
+                - name: mean
+                  type: double
+                  description: >
+                    A mean value
+                - name: min
+                  type: double
+                  description: >
+                    A minimum value
+                - name: max
+                  type: double
+                  description: >
+                    A maximum value
+            - name: ia_core_utilization
+              type: object
+              description: >
+                CPU utilization on the specified core between the 2 specified samples

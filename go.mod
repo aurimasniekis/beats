@@ -28,6 +28,7 @@ require (
 	github.com/antlr/antlr4 v0.0.0-20200225173536-225249fdaef5
 	github.com/apoydence/eachers v0.0.0-20181020210610-23942921fe77 // indirect
 	github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5
+	github.com/aurimasniekis/go-intel-power-gadget v0.0.0-20200826034844-bbcd0ed424c5
 	github.com/aws/aws-lambda-go v1.6.0
 	github.com/aws/aws-sdk-go-v2 v0.9.0
 	github.com/awslabs/goformation/v4 v4.1.0
